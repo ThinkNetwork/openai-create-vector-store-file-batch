@@ -1,9 +1,8 @@
-
 [
   {
     "kind": "column",
-    "name": "OpenAI (Assistants)",
-    "description": "Create, modify and run OpenAI Assistants.",
+    "name": "Create OpenAI Vector Store File Batch",
+    "description": "Create a batch of files for a specific vector store in OpenAI's API.",
     "author": "Gavin Horne <gavin@thinknetwork.com.au>",
     "params": [
       {
@@ -12,18 +11,13 @@
         "type": "string"
       },
       {
-        "name": "endpoint",
-        "displayName": "API Endpoint (Required)",
+        "name": "vector_store_id",
+        "displayName": "Vector Store ID (Required)",
         "type": "string"
       },
       {
-        "name": "body",
-        "displayName": "Body (JSON Schema Required)",
-        "type": "string"
-      },
-      {
-        "name": "json",
-        "displayName": "JSON Schema (Output)",
+        "name": "file_ids",
+        "displayName": "File IDs (JSON format, Required)",
         "type": "string"
       }
     ],
